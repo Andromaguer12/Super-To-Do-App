@@ -1,0 +1,194 @@
+.TodosPageContainer {
+  background-color: aquamarine;
+  background-image: url(../assets/background.jpg);
+  background-size: cover;
+  background-blend-mode: darken;
+  width: 100%;
+  height: 100%;
+}
+
+.TodosHeader {
+  background-color: #e7e7e77a;
+  width: 90%;
+  backdrop-filter: blur(5px);
+  align-self: center;
+  border-radius: 0 0 10px 10px;
+  padding: 10px;
+}
+
+.UserCard > div > p {
+  font-size: 20px;
+  color: #fff;
+  font-weight: bold;
+}
+
+.TodosContainer {
+  width: 100%;
+  box-sizing: border-box;
+  height: 85%;
+}
+
+.sendTodoInput {
+  width: 80%;
+  border: transparent;
+  padding: 10px;
+  color: #000;
+  background-color: transparent;
+  font-size: 20px;
+}
+
+.sendTodoInput:focus {
+  outline: none;
+}
+
+.TodosList {
+  width: 100%;
+  max-height: 82%;
+  padding-top: 60px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  scrollbar-width: none;
+  box-sizing: border-box;
+  -webkit-mask-image: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(0, 0, 0, 1) 90%,
+    rgba(0, 0, 0, 0) 95%
+  );
+  mask-image: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(0, 0, 0, 1) 90%,
+    rgba(0, 0, 0, 0) 95%
+  );
+  -webkit-font-smoothing: antialiased;
+}
+
+.TodosList::-webkit-scrollbar {
+  display: none;
+}
+
+.InputAndSend {
+  background-color: #e7e7e7;
+  border-radius: 5px;
+  padding: 10px;
+  width: 50%;
+  box-shadow: 0 0 10px #0000007a;
+  margin: 10px 0 20px 0;
+}
+
+.TodoCard {
+  width: 50%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  background-color: #ffffffb6;
+  backdrop-filter: blur(2px);
+}
+
+.TodoCardHeader {
+  width: 100%;
+}
+
+.TodoText {
+  width: 80%;
+  max-width: 80%;
+  color: #000;
+}
+
+.TodoTimestamp {
+  color: #7a7a7a;
+  font-size: 14px;
+}
+
+.TodoData {
+  padding-top: 10px;
+  width: 100%;
+}
+
+.EmptyComponent {
+  background: #000000b0;
+  backdrop-filter: blur(5px);
+  border-radius: 20px;
+  padding: 30px 15px;
+  width: 20%;
+  height: 25vh;
+}
+
+#empty-warning-title {
+  color: #fff;
+  font-size: 30px;
+  text-align: center;
+  font-weight: bold;
+}
+
+#empty-warning-footer {
+  color: #fff;
+  font-size: 13px;
+  max-width: 80%;
+  text-align: center;
+  font-weight: bold;
+}
+
+.AcceptAndDeny {
+  background-color: #e7e7e7a9;
+  backdrop-filter: blur(5px);
+  border-radius: 10px;
+  padding: 10px;
+  width: 200px;
+}
+
+.todo-card-appear {
+  opacity: 0;
+  transform: translateY(50px);
+}
+
+.todo-card-appear.todo-card-appear-active {
+  opacity: 1;
+  transition: all 500ms ease;
+}
+
+.todos-header-appear {
+  opacity: 0;
+  transform: translateY(50px);
+}
+
+.todos-header-appear.todos-header-appear-active {
+  opacity: 1;
+  transition: all 500ms ease;
+}
+
+@media screen and (max-width: 1000px) {
+  .EmptyComponent {
+    width: 30%;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .EmptyComponent {
+    width: 40%;
+  }
+  .InputAndSend {
+    width: 80%;
+  }
+  .TodoCard {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  #user-data {
+    display: none;
+  }
+  .EmptyComponent {
+    width: 60%;
+  }
+  .InputAndSend {
+    box-sizing: border-box;
+    width: 95%;
+  }
+  .TodoCard {
+    box-sizing: border-box;
+    width: 95%;
+  }
+}

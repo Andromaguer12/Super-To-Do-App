@@ -1,0 +1,71 @@
+.LoginPage{
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    background-image: url(../assets/background.jpg);
+}
+
+.LoginContainer{
+    background-color: #e7e7e77a;
+    backdrop-filter: blur(2px);
+    width: 30%;
+    height: 100%;
+}
+
+.LoginHeader{
+    width: 100%;
+    margin-top: 40px;
+}
+
+.glass-text-input{
+    width: 82%;
+    background-color: transparent;
+    border: transparent;
+    padding: 10px;
+    color: #fff;
+    border-bottom: 2px solid #fff;
+}
+
+.glass-text-input:focus{
+    outline: none;
+}
+
+.glass-text-input-container{
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.LoginInputsAndButton{
+    width: 100%;
+    padding: 0 40px;
+    margin-top: 25px;
+    box-sizing: border-box;
+}
+
+.LoginButton{
+    background-color: #ffffff;
+    margin-top: 30px;
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    border: transparent;
+    color: #7A7A7A;
+    transition: all 500ms ease;
+}
+
+.LoginButton:hover{
+    cursor: pointer;
+}
+
+.LoginButton:active{
+    background-color: #ffffff7a;
+    transform: scale(1.05);
+    transition: all 500ms ease;
+}
+
+.error-card{
+    background-color: #ca0c0c85;
+    border: 1px solid red;
+    padding: 10px;
+    border-radius: 10px;
+}
