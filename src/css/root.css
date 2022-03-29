@@ -4,6 +4,10 @@
   font-family: "Ubuntu", sans-serif;
 }
 
+*::-webkit-scrollbar {
+  display: none;
+}
+
 .font {
   font-family: "Ubuntu", sans-serif;
 }

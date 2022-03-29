@@ -25,7 +25,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "prettier": "prettier \"**/*.js\" --write --ignore-path .gitignore"
+    "prettier": "prettier \"**/*.js\" --write --ignore-path .gitignore",
+    "prettier-css": "prettier \"**/*.css\" --write --ignore-path .gitignore"
   },
   "eslintConfig": {
     "extends": [

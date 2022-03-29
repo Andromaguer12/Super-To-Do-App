@@ -158,9 +158,25 @@
   transition: all 500ms ease;
 }
 
+.linkFavorites-responsive {
+  display: none;
+}
+
 @media screen and (max-width: 1000px) {
+  .linkFavorites-responsive {
+    display: none;
+  }
   .EmptyComponent {
     width: 30%;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .linkFavorites {
+    display: none;
+  }
+  .linkFavorites-responsive {
+    display: block;
   }
 }
 
@@ -176,10 +192,13 @@
   }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 560px) {
   #user-data {
     display: none;
   }
+}
+
+@media screen and (max-width: 500px) {
   .EmptyComponent {
     width: 60%;
   }

@@ -79,43 +79,60 @@ export default function TodosPage() {
 
   return (
     <div className="TodosPageContainer flex-c-ac-jsb">
-      <div className="TodosHeader flex-r-ac-jsb">
-        <div className="UserCard flex-r-ac-jsb">
-          <Avatar
-            src={usericon}
-            style={{ background: "#fff", width: 65, height: 65 }}
-          />
-          <div
-            className="flex-c-afs"
-            id="user-data"
-            style={{ marginLeft: "10px" }}
+      <div className="TodosHeader flex-c-ac-jfs">
+        <div style={{ width: "100%" }} className="flex-r-ac-jsb">
+          <div className="UserCard flex-r-ac-jsb">
+            <Avatar
+              src={usericon}
+              style={{ background: "#fff", width: 65, height: 65 }}
+            />
+            <div
+              className="flex-c-afs"
+              id="user-data"
+              style={{ marginLeft: "10px" }}
+            >
+              <p>{user.name}</p>
+              <p>{user.email}</p>
+            </div>
+          </div>
+          <Link
+            className="linkFavorites"
+            to={Allroutes.favorites}
+            style={{ textDecoration: "none" }}
           >
-            <p>{user.name}</p>
-            <p>{user.email}</p>
+            <Button
+              color="seconadary"
+              variant="outlined"
+              endIcon={<StarOutline />}
+            >
+              Favoritos
+            </Button>
+          </Link>
+          <div
+            className="LoginHeader flex-r-ac-jc"
+            style={{ marginTop: 0, width: "fit-content" }}
+          >
+            <img src={logoicon} style={{ width: 65 }} alt="logoicon" />
+            <div className="flex-c-afs" style={{ margin: "0 20px" }}>
+              <p variant="h5" color="secondary">
+                Super
+              </p>
+              <p variant="h5" style={{ fontSize: "30px" }} color="secondary">
+                To Do
+              </p>
+            </div>
           </div>
         </div>
-        <Link to={Allroutes.favorites} style={{ textDecoration: "none" }}>
-          <Button
-            color="seconadary"
-            variant="outlined"
-            endIcon={<StarOutline />}
-          >
-            Favoritos
-          </Button>
-        </Link>
-        <div
-          className="LoginHeader flex-r-ac-jc"
-          style={{ marginTop: 0, width: "fit-content" }}
-        >
-          <img src={logoicon} style={{ width: 65 }} alt="logoicon" />
-          <div className="flex-c-afs" style={{ margin: "0 20px" }}>
-            <p variant="h5" color="secondary">
-              Super
-            </p>
-            <p variant="h5" style={{ fontSize: "30px" }} color="secondary">
-              To Do
-            </p>
-          </div>
+        <div className="linkFavorites-responsive flex-c-ac-jc">
+          <Link to={Allroutes.favorites} style={{ textDecoration: "none" }}>
+            <Button
+              color="seconadary"
+              variant="outlined"
+              endIcon={<StarOutline />}
+            >
+              Favoritos
+            </Button>
+          </Link>
         </div>
       </div>
       <div className="TodosContainer flex-c-ac-jsb">
