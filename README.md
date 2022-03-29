@@ -2,6 +2,10 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+For register into the app, you only need to provide a email, in the user field, and a password, and you will be in the app. 
+
+Now do not forget that password because is your only credential to get in the session.
+
 ## Available Scripts
 
 In the project directory, you can run:
